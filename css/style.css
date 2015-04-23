@@ -1,46 +1,45 @@
 .container {
-	display: flex;
-	justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 #gamecanvas {
-	margin: 0 auto;
+  margin: 0 auto;
 }
 
 ul li {
-	padding: 0.3em;
+  padding: 0.3em;
 }
 
 .scorebox {
-	padding: 1em;
+  padding: 1em;
 }
 
-.instructionbox{
-	width: 20%;
+.instructionbox {
+  width: 20%;
 }
 
 .score, .timer {
-	text-align: center;
-	font-size: 20px;
+  text-align: center;
+  font-size: 20px;
 }
 
 .timer {
-	background-color: #333;
-	padding: 0.5em;
+  background-color: #333;
+  padding: 0.5em;
 }
 
 .gameBtn {
-	font-size: 25px;
-	padding: 0.6em;
-	background-color: #69aabf;
-  	-webkit-border-radius: 10;
-  	-moz-border-radius: 10;
-  	border-radius: 10px;
+  font-size: 25px;
+  padding: 0.6em;
+  background-color: #69aabf;
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
 }
 
 #status {
-	font-size: 25px;
-	display: inline-block;
-	padding: 0.5em;
+  font-size: 25px;
+  display: inline-block;
+  padding: 0.5em;
 }
-
