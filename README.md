@@ -3,12 +3,7 @@ frontend-nanodegree-arcade-game
 
 Rubric : https://www.udacity.com/course/viewer/#!/c-nd001/l-2696458597/m-2687128535
 
-Game rules:
-Start the game by pressing the "Start Game" button.
-Once the Start Game button is pressed, enemies appear across the canvas and the timer is set(to a countdown of 30secs).
-Start moving the player up/down/left/right using the arrow keys in your keyboard. Control the player's movement such that it doesn't collide with the Enemies while the player is being moved in any direction.
-
-How to play this game:
+Steps to play this game:
 1) Click the "Start Game" button.
 2) Start moving the player up/down/left/right using the arrow keys in your keyboard.
 3) The goal is to try to reach the top water tile without colliding with the bugs all within the 30 sec. timer limit , that will increase your score
@@ -25,7 +20,7 @@ When is the game done? :
 Once the timer of 30secs is over,
 	- It means the player's game time is done
 	- The player is brought back to the original tile position
-	- Whatever the player has scored during the game, is displayed
+	- The score gets displayed to the user
 	- A message "Sorry,Game is over." is also displayed indicating the player's time is up.
 
 Restart the game:
