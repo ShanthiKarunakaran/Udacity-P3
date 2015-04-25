@@ -101,11 +101,7 @@ var Engine = (function(global) {
         var length = allEnemies.length;
 
         for (var i = 0; i < length; i++) {
-            //if (object1.x < object2.x + object2.width  && object1.x + object1.width  > object2.x &&
-            //object1.y < object2.y + object2.height && object1.y + object1.height > object2.y) {
-            // The objects are touching
-            //}
-            //!(left_object2 > right_object1 || right_object2 < left_object1 || bottom_object2 < top_object1 || top_object2 > bottom_object1)
+            //collision calculation: !(left_object2 > right_object1 || right_object2 < left_object1 || bottom_object2 < top_object1 || top_object2 > bottom_object1)
             if ((player.x < allEnemies[i].x + 50 && player.x + 50 > allEnemies[i].x && player.y < allEnemies[i].y + 50 && player.y + 50 > allEnemies[i].y)) {
                 player.playerHit();
                 player.reset();
