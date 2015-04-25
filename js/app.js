@@ -10,7 +10,7 @@ var Enemy = function (x) {
     // a helper we've provided to easily load images
     this.sprite = 'images/enemy-bug.png';
     this.x = x;
-    var EnemyPosY = [75, 160, 240],
+    var EnemyPosY = [62, 160, 240],
         EnemySpeed = [100, 200, 300, 400, 500];
 
     //randomize the y enemy position
@@ -117,10 +117,9 @@ var game = {
     gameStart: function(btnElem) {
         this.gamePlaying = true;
         // Place all enemy objects in an array called allEnemies
-        allEnemies.push(enemy1);
-        allEnemies.push(enemy2);
-        allEnemies.push(enemy3);
-        allEnemies.push(enemy4);
+        for (var x = 0; x < 4; x++) {
+            allEnemies.push(enemy[x]);
+        }
         //reset score to 0
         player.resetScore();
 
@@ -173,10 +172,11 @@ var player = new Player(5,410,15);
 var initxEnemy = -10;
 
 //Instantiate the enemy objects
-var enemy1 = new Enemy(initxEnemy);
-var enemy2 = new Enemy(initxEnemy);
-var enemy3 = new Enemy(initxEnemy);
-var enemy4 = new Enemy(initxEnemy);
+var enemy = [];
+for (var x = 0; x < 4; x++) {
+    enemy[x] = new Enemy(initxEnemy);
+}
+
 //Intialize the array
 var allEnemies = [];
 
