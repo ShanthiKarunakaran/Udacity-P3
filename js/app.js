@@ -1,5 +1,6 @@
 //global variables
-var score = 0;
+var score = 0,
+    EnemyPosY = [70, 160, 240];
 
 // Enemies our player must avoid
 var Enemy = function (x) {
@@ -10,11 +11,14 @@ var Enemy = function (x) {
     // a helper we've provided to easily load images
     this.sprite = 'images/enemy-bug.png';
     this.x = x;
-    var EnemyPosY = [62, 160, 240],
-        EnemySpeed = [100, 200, 300, 400, 500];
+    var EnemySpeed = [100, 200, 300, 400, 500];
 
     //randomize the y enemy position
-    this.y = EnemyPosY[Math.floor(Math.random() * EnemyPosY.length)];
+    var index = Math.floor(Math.random() * EnemyPosY.length);
+    this.y = EnemyPosY[index];
+    //to make sure the y values are unique(bugs to appear in unique rows), remove the element from the array for the index that respresents the y value that has been assigned
+    EnemyPosY.splice(index,1);
+
     //randomize the enemy speed
     this.speed = EnemySpeed[Math.floor(Math.random() * EnemySpeed.length)];
 };
